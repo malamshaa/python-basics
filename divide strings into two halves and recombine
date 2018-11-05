@@ -1,0 +1,20 @@
+print('Enter two strings')
+str1 = input ()
+str2 = input ()
+if (len(str1)%2 == 0):
+    str1fwdln = len(str1)/2
+    str1_fwd = str1[:int(str1fwdln)]
+    str1_bck = str1[int(str1fwdln):int(len(str1))]
+else:
+    str1fwdln = (len(str1)/2)+1
+    str1_fwd = str1[:int(str1fwdln)]
+    str1_bck = str1[int(str1fwdln):int(len(str1))]
+if (len(str2)%2 == 0):
+    str2fwdln = len(str2)/2
+    str2_fwd = str2[:int(str2fwdln)]
+    str2_bck = str2[int(str2fwdln):int(len(str2))]
+else:
+    str2fwdln = (len(str2)/2)+1
+    str2_fwd = str2[:int(str2fwdln)]
+    str2_bck = str2[int(str2fwdln):int(len(str2))]
+print(str1_fwd + str2_fwd + str1_bck + str2_bck)
